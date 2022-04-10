@@ -23,3 +23,4 @@ function longestCommonPrefix(strs: string[]): string {
   return pre;
 }
 // @lc code=end
+
