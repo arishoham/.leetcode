@@ -5,11 +5,11 @@
  */
 
 // @lc code=start
-function longestCommonPrefix(strs: string[]): string {
+function longestCommonPrefix(strs) {
   let size = strs.length;
   if (size === 0) return "";
   if (size === 1) return strs[0];
-  
+
   strs.sort();
 
   // find the minimum length from first and last string
@@ -23,4 +23,3 @@ function longestCommonPrefix(strs: string[]): string {
   return pre;
 }
 // @lc code=end
-
