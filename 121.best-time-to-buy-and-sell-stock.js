@@ -10,12 +10,12 @@
  * @return {number}
  */
 var maxProfit = function (prices) {
-  let min = Number.MAX_SAFE_INTEGER;
-  let max = 0;
-  for (let i = 0; i < prices.length; i++) {
-    min = Math.min(min, prices[i]);
-    max = Math.max(max, prices[i] - min);
-  }
+  let min = Infinity,
+    max = 0;
+  prices.forEach((price) => {
+    min = Math.min(min, price);
+    max = Math.max(max, price - min);
+  });
   return max;
 };
 // @lc code=end
